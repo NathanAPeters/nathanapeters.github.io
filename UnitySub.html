@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Generic - Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+    <style>
+        /* Center images */
+        .centered-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo"><strong>Portfolio</strong></a>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Unity.html">Unity</a></li>
+                <li><a href="Unreal.html">Unreal</a></li>
+                <li><a href="Art.html">Art</a></li>
+                <li><a href="School.html">School</a></li>
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="AboutMe.html">Soft Skills</a></li>
+            </ul>
+            <ul class="actions stacked">
+                <li><a href="GettingStarted.html" class="button primary fit">Get Started</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main" class="alt">
+            <section id="one">
+                <div class="inner">
+                    <header class="major">
+                        <h1 id="title">Populate this title</h1>
+                    </header>
+                    <div class="image-container">
+                        <img id="img1" class="centered" src="" alt="Main Image" />
+                    </div>
+                    <section id="learned">
+                        <header class="major">
+                            <h2 class="centered">My Contributions</h2>
+                        </header>
+                        <ul class="centered" id="contributions">
+                             <!-- contributions will generate here -->
+                        </ul>
+
+                        <header class="major">
+                            <h2 class="centered">What I Learned</h2>
+                        </header>
+                        <ul class="centered" id="learned-list">
+                            <!-- learned-list will generate here -->
+                        </ul>
+                    </section>
+                    <div class="image-container">
+                        <img id="img2" class="centered" src="" alt="Additional Image" />
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+const gameData = {
+    "keeper-of-shadows": {
+        img1: "../images/Unity/KeeperOfShadows-3.png",
+        img2: "../images/Unity/KeeperOfShadows-2.png",
+        contributions: [
+            "Implemented grid-to-tile generation for spawning movable boxes and tiles.",
+            "Developed directional box pushing mechanics with smooth lerp animations",
+            "Designed and implemented a global volume including vignette, shadow midtones, color curves, tone mapping, and volume.",
+            "Programmed player movement and controls with responsive feedback.",
+            "Created texture and shader graph for the boxes, enhancing visual aesthetics.",
+            "Implemented various lighting effects to enhance the game's dark atmosphere."
+        ],
+        whatILearned: [
+            "Applying S.O.L.I.D principles for cleaner and more maintainable code.",
+            "Fine-tuning post-processing effects to create a cohesive game atmosphere.",
+            "Leveraging Unity’s shader graph to create custom materials.",
+            "Used perlin noise to generate random room shape with walls around"
+        ]
+    },
+    "sleep-no-more": {
+        img1: "../images/Unity/SleepNoMore-2.PNG",
+        img2: "../images/Unity/SleepNoMore-3.PNG",
+        contributions: [
+            "Developed smooth 2D platformer movement with responsive controls.",
+            "Implemented wall jumping and dashing mechanics with visual effects.",
+            "Created shadow casting and various background and platform art.",
+            "Designed player and enemy characters with unique art styles.",
+            "Developed a charm system to enhance gameplay.",
+            "Started a boss character using a state machine for complex behaviors.",
+            "Programmed enemy slime movement and projectile tracking with predictive aiming.",
+            "Implemented enemy pathing by lerping through nodes placed in the world.",
+            "Designed attack mechanics and player health UI."
+        ],
+        whatILearned: [
+            "Combining art and mechanics to create a cohesive visual and gameplay experience.",
+            "Implementing advanced enemy AI with predictive aiming and pathfinding.",
+            "Designing and balancing player abilities like wall jumping and dashing."
+        ]
+    },
+    "magecraft-timber-troupe": {
+        img1: "../images/Unity/LundumDare55-2.PNG",
+        img2: "../images/Unity/LundumDare55-3.PNG",
+        contributions: [
+            "Collaborated with a team to brainstorm and execute game ideas under time pressure.",
+            "Developed a shop system where players can interact with a bunny to buy weapons.",
+            "Created animations for the bunny character.",
+            "Implemented spell button scripts for casting abilities."
+        ],
+        whatILearned: [
+            "Managing time and resources effectively during a game jam.",
+            "Working in a team to brainstorm and implement ideas rapidly.",
+            "Creating and animating character interactions in Unity."
+        ]
+    },
+    "the-gift": {
+        img1: "../images/Unity/",
+        img2: "../images/Unity/",
+        contributions: [
+            "Designed puzzles involving weighted pressure plates and object placement.",
+            "Created a fictional language that maps to numbers for logic-based puzzles.",
+            "Implemented various mini-games that contribute to solving the puzzles."
+        ],
+        whatILearned: [
+            "Designing intricate puzzles that challenge players' logic and problem-solving skills.",
+            "Creating immersive gameplay through the use of fictional languages and symbols."
+        ]
+    },
+    "better-mechanics": {
+        img1: "../images/Unity/BetterPlayerMechanics.PNG",
+        img2: "../images/Unity/BetterPlayerMechanics-2.PNG",
+        contributions: [
+            "Developed math-based camera and player movement for precise control.",
+            "Implemented crouching and ladder movement mechanics.",
+            "Designed a system for opening doors with boxes and raycast-based item pickup.",
+            "Created a custom crosshair UI for player feedback."
+        ],
+        whatILearned: [
+            "Implementing math-based mechanics for precise and responsive gameplay.",
+            "Designing intuitive player controls and interactions."
+        ]
+    },
+    "cardkyuu": {
+        img1: "../images/Unity/Cardkyuu-GameJam.PNG",
+        img2: "",
+        contributions: [
+            "Developed a state machine for setting, serving, receiving, and spiking actions.",
+            "Implemented ball physics to hit a target.",
+            "Collaborated with a team to set up a source tree and manage tasks via Trello."
+        ],
+        whatILearned: [
+            "Designing sports game mechanics with realistic physics.",
+            "Working effectively in a team to distribute tasks and meet deadlines."
+        ]
+    },
+    "shadow-vile": {
+        img1: "../images/Unity/",
+        img2: "../images/Unity/",
+        contributions: [
+            "Started creating a floating island with visually appealing assets during a game jam.",
+            "Focused on developing environmental design and asset integration."
+        ],
+        whatILearned: [
+            "Exploring environmental design techniques in Unity.",
+            "Balancing time and resources when working alone on a project."
+        ]
+    },
+    "cube-brain": {
+        img1: "../images/Unity/",
+        img2: "../images/Unity/",
+        contributions: [
+            "Developed 2D tiles that generate other tiles procedurally.",
+            "Created a cube that the player can rotate in three different directions.",
+            "Programmed a camera system that slowly zooms in at the start of the game."
+        ],
+        whatILearned: [
+            "Introducing procedural generation in game development.",
+            "Creating dynamic camera systems for enhancing gameplay."
+        ]
+    },
+    "3d-controller": {
+        img1: "../images/Unity/",
+        img2: "../images/Unity/",
+        contributions: [
+            "Invested significant time in level design.",
+            "Implemented mechanics like multiple jumps and player movement."
+        ],
+        whatILearned: [
+            "Gaining foundational experience in Unity game development.",
+            "Exploring level design and player movement mechanics."
+        ]
+    }
+};
+    
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                gameID: params.get('gameID')
+            };
+        }
+    
+        function populatePage() {
+    const { gameID } = getQueryParams();
+    const data = gameData[gameID];
+
+    if (data) {
+        document.getElementById('title').textContent = gameID.replace(/-/g, ' ');
+
+        // Handle the first image
+        const img1Element = document.getElementById('img1');
+        if (data.img1) {
+            img1Element.src = data.img1;
+            img1Element.style.display = 'block'; // Ensure it's visible if there's an image
+        } else {
+            img1Element.style.display = 'none';
+        }
+
+        // Handle the second image
+        const img2Element = document.getElementById('img2');
+        if (data.img2) {
+            img2Element.src = data.img2;
+            img2Element.style.display = 'block'; // Ensure it's visible if there's an image
+        } else {
+            img2Element.style.display = 'none';
+        }
+
+        // Handle contributions
+        const contributionsList = document.getElementById('contributions');
+        if (data.contributions && data.contributions.length > 0) {
+            contributionsList.innerHTML = '';
+            data.contributions.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                contributionsList.appendChild(li);
+            });
+        } else {
+            document.getElementById('contributions-container').style.display = 'none';
+        }
+
+        // Handle "What I Learned"
+        const learnedList = document.getElementById('learned-list');
+        if (data.whatILearned && data.whatILearned.length > 0) {
+            learnedList.innerHTML = '';
+            data.whatILearned.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                learnedList.appendChild(li);
+            });
+        } else {
+            document.getElementById('learned-container').style.display = 'none';
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', populatePage);
+    </script>
+</body>
+</html>
