@@ -79,7 +79,7 @@
 					<div class="inner">
 						<section>
 							<span class="image">
-								<img src="../images/Nathan.PNG" alt="Nathan Image" class="contact-image" />
+								<img src="msc/Nathan.PNG" alt="Nathan Image" class="contact-image" />
 							</span>
 						</section>
 						<section class="split">
@@ -134,69 +134,65 @@
     <script src="assets/js/main.js"></script>
     <script>
         const gameData = {
-            "First-Person-Adventure": {
-                gameID: "First-Person-Adventure",
-                img1: "Unreal/TargetIsle2.png",
-                contributions: [
-                    "enemy sensing and movement",
-                    "Leveraged assets from the store to create a visually appealing level.",
-                    "Voice acting by me.",
-                    "An emissive story about target robots going rogue",
-                    "a game where you have to balance machine parts and bullets",
-                    "Designed a landscape that guides the player and provides supplies.",
-                    "Created a cannon that shoots targets into the water for extra machine parts.",
-                    "Designed a random enemy spawner in an area.",
-                    "Developed textures and materials for the targets.",
-                ],
-                whatILearned: [
-                    
-                    "asking myself better questions like how level design relates to the users experience",
-                    "Improved my skills in landscape design and resource management.",
-                    "Faced challenges in balancing enemy AI and player resources.",
-                    "Learned how to create engaging stories in a game."
-                    
-                ],
-                img2: "Unreal/TargetIsle3.png"
-            },
-            "3D-Puzzle-Challenge": {
-                gameID: "3D-Puzzle-Challenge",
-                img1: "Unreal/dreamlvl2.png",
-                contributions: [
-                    "Color-coordinated button/door system that requires strategic thinking.",
-                    "Unique puzzle design with creative solutions, like avoiding certain buttons.",
-                    "Created a painter object that changes color when triggered by a color cube.",
-                    "Developed glowing materials for the cubes and doors.",
-                    "Worked on indoor lighting, including a portal teleportation system.",
-                    "Designed a custom texture for the walls."
-                ],
-                whatILearned: [
-                    "Gained experience in thinking outside the box when it comes to designing complex puzzle mechanics.",
-                    "Enhanced skills in creating dynamic materials and lighting.",
-                    "Overcame challenges with indoor lighting and interactive elements."
-                ],
-                img2: "Unreal/dreamlvl3.png"
-            },
-            "3D-AI-Driven-Experience": {
-                gameID: "3D-AI-Driven-Experience",
-                img1: "",
-                contributions: [
-                    "Developed the enemy behavior tree with roam, follow, run away, and lose track states.",
-                    "Implemented a special pickup that makes AI enemies run away from the player.",
-                    "Designed a shop system that offers random items at the start of the game.",
-                    "Created materials for collectibles.",
-                    "Composed a song for the game soundtrack.",
-                    "Added bird sounds and background noise for an enhanced user experience.",
-                    "Created a custom UI for player health.",
-                    "Customized the player body material to be black to contrast with enemies.",
-                ],
-                whatILearned: [
-                    "Gained experience in designing advanced AI behaviors.",
-                    "Improved skills in sound design and UI creation.",
-                    "Faced challenges with integrating complex gameplay elements."
-                ],
-                img2: "Unreal/EndExperience.png"
-            }
-        };
+	    "First-Person-Adventure": {
+	        gameID: "First-Person-Adventure",
+	        img1: "Unreal/TargetIsle2.png",
+	        contributions: [
+	            "Programmed enemy sensing and movement.",
+	            "Utilized assets from the Unreal store to create a visually appealing level.",
+	            "Provided voice acting for in-game dialogue.",
+	            "Authored an immersive storyline about rogue target robots.",
+	            "Designed a landscape that guides the player through a semi open world experience.",
+	            "Created a cannon system that launched targets to gain extra machine parts.",
+	            "Designed an enemy spawner with random contained spawn location.",
+	            "Developed textures and materials for the targets."
+	        ],
+	        whatILearned: [
+	            "Reflected on how level design related to the player's experience.",
+	            "Improved my skills in landscape design and resource management.",
+	            "Overcame challenges in balancing enemy AI and player resources.",
+	            "Learned how to create engaging stories in a game."
+	        ],
+	        img2: "Unreal/TargetIsle3.png"
+	    },
+	    "3D-Puzzle-Challenge": {
+	        gameID: "3D-Puzzle-Challenge",
+	        img1: "Unreal/dreamlvl2.png",
+	        contributions: [
+	            "Designed a color-coordinated button/door system that required strategic thinking.",
+	            "Created unique puzzle mechanics with creative solutions, such as avoiding specific buttons.",
+	            "Developed a painter object that changed color when triggered by a color cube.",
+	            "Created glowing materials for the cubes and doors.",
+	            "Constructed a portal to allow for player teleportation.",
+	            "Designed a custom texture for the walls."
+	        ],
+	        whatILearned: [
+	            "Gain experience in designing complex puzzle mechanics.",
+	            "Enhanced my skills in creating dynamic materials and lighting.",
+	            "Overcame challenges with indoor lighting and interactive elements."
+	        ],
+	        img2: "Unreal/dreamlvl3.png"
+	    },
+	    "3D-AI-Driven-Experience": {
+	        gameID: "3D-AI-Driven-Experience",
+	        img1: "",
+	        contributions: [
+	            "Developed the enemy behavior tree with roam, follow, run away, and lose track states.",
+	            "Implemented a special pickup that made AI enemies run away from the player.",
+	            "Designed a shop system that offered random items at the start of the game.",
+	            "Created materials for collectibles.",
+	            "Composed a song for the game soundtrack.",
+	            "Created a custom UI for player health.",
+	            "Customized the player body material to contrast with enemies."
+	        ],
+	        whatILearned: [
+	            "Gained experience in designing advanced AI behaviors.",
+	            "Improved my skills in sound design and UI creation.",
+	            "Overcame complexities of behavioral enemy AI."
+	        ],
+	        img2: "Unreal/EndExperience.png"
+	    }
+	};
     
         function getQueryParams() {
             const params = new URLSearchParams(window.location.search);
