@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Nathan Peters</title>
+    <title>Generic - Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
     <style>
         /* Center images */
         .centered-image {
@@ -47,7 +47,7 @@
             <section id="one">
                 <div class="inner">
                     <header class="major">
-                        <h1 id="title">Unity Projects</h1>
+                        <h1 id="title">Populate this title</h1>
                     </header>
                     <div class="image-container">
                         <img id="img1" class="centered" src="" alt="Main Image" />
@@ -74,161 +74,102 @@
             </section>
         </div>
 
-				<!-- Contact -->
-				<section id="contact">
-					<div class="inner">
-						<section>
-							<span class="image">
-								<img src="msc/Nathan.PNG" alt="Nathan Image" class="contact-image" />
-							</span>
-						</section>
-						<section class="split">
-							<section>
-								<div class="contact-method">
-									<span class="icon solid alt fa-envelope"></span>
-									<h3>Email</h3>
-									<a href="#">nathanapeters20@gmail.com</a>
-								</div>
-							</section>
-				                        <section>
-								<div class="contact-method">
-									<span class="icon brands fa-discord"></span>
-									<h3>Discord</h3>
-									<span>xeph_nebula</span>
-								</div>
-							</section>
-							<section>
-								<div class="contact-method">
-									<span class="icon solid alt fa-home"></span>
-									<h3>Location</h3>
-									<span>Calgary, AB<br />
-									Victoria, BC</span>
-								</div>
-							</section>
-						</section>
-					</div>
-				</section>
-				<!-- Footer -->
-				<footer id="footer">
-					<div class="inner">
-						<ul class="copyright">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-				</footer>
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
     <script>
 const gameData = {
-    "Ludum-Dare-56": {
-        img1: "Unity/LudumDare56-1.PNG",
-        img2: "Unity/LudumDare56-2.PNG",
+    "keeper-of-shadows": {
+        img1: "../images/Unity/KeeperOfShadows-3.png",
+        img2: "../images/Unity/KeeperOfShadows-2.png",
         contributions: [
-            "Drew custom sprites, backgrounds, and a pokeball, creating a cohesive visual style.",
-            "Implemented ball physics using Unity's Network Transform component.",
-            "Integrated physics with Mirror’s server framework for a smooth multiplayer experience.",
-            "Contributed to gameplay features aligned with the 'Little Guys' theme."
-        ],
-        whatILearned: [
-            "Gained experience with Mirror for multiplayer development.",
-            "Enhanced skills in sprite design and animation for 2D games.",
-            "Learned to optimize networked physics for real-time multiplayer environments."
-        ]
-    },
-    "Giant-Slayer": {
-        img1: "Unity/GiantSlayer-1.PNG",
-        img2: "Unity/GiantSlayer-2.PNG",
-        contributions: [
-            "Developed grapple hook physics using dot product and centripetal force.",
-            "Added Unity's new particle effects to enhance sword-to-titan interactions.",
-            "Designed a global volume for visual enhancements like bloom and tone mapping.",
-            "Integrated store assets to create a cohesive and visually rich environment."
-        ],
-        whatILearned: [
-            "Improved understanding of physics-based mechanics in Unity.",
-            "Refined skills in particle systems for impactful visual feedback.",
-            "Learned to adapt store assets for custom game designs.",
-            "Explored creative uses of Unity's global volumes for atmospheric effects."
-        ]
-    },
-    "Keeper-Of-Shadows": {
-        img1: "Unity/KeeperOfShadows.PNG",
-        img2: "Unity/KeeperOfShadows-2.PNG",
-        contributions: [
-            "Implemented grid-to-tile generation for spawning movable grid assets.",
-            "Developed directional asset pushing mechanics with smooth lerp animations.",
+            "Implemented grid-to-tile generation for spawning movable boxes and tiles.",
+            "Developed directional box pushing mechanics with smooth lerp animations",
             "Designed and implemented a global volume including vignette, shadow midtones, color curves, tone mapping, and volume.",
             "Programmed player movement and controls with responsive feedback.",
             "Created texture and shader graph for the boxes, enhancing visual aesthetics.",
             "Implemented various lighting effects to enhance the game's dark atmosphere."
         ],
         whatILearned: [
-            "Applied S.O.L.I.D principles for cleaner and more maintainable code.",
-            "Fine-tuned post-processing effects to create a cohesive game atmosphere.",
-            "Leveraged Unity’s shader graph to create custom materials.",
-            "Used Perlin noise to generate random room shapes, complete with surrounding walls."
+            "Applying S.O.L.I.D principles for cleaner and more maintainable code.",
+            "Fine-tuning post-processing effects to create a cohesive game atmosphere.",
+            "Leveraging Unity’s shader graph to create custom materials.",
+            "Used perlin noise to generate random room shape with walls around"
         ]
     },
-    "Sleep-No-More": {
-        img1: "Unity/SleepNoMore-2.PNG",
-        img2: "Unity/SleepNoMore-3.PNG",
+    "sleep-no-more": {
+        img1: "../images/Unity/SleepNoMore-2.PNG",
+        img2: "../images/Unity/SleepNoMore-3.PNG",
         contributions: [
-            "Developed responsive ability system using an observer pattern.",
-            "Implemented wall jumping and dashing mechanics with visual effects.",
-            "Created all the art for backgrounds, characters, and scene assets, including shadow casting elements.",
-            "Designed player and enemy characters with distinct art styles.",
-            "Implemented a lighting system that illuminated the player's direct line of sight.",
             "Developed smooth 2D platformer movement with responsive controls.",
+            "Implemented wall jumping and dashing mechanics with visual effects.",
+            "Created shadow casting and various background and platform art.",
+            "Designed player and enemy characters with unique art styles.",
+            "Developed a charm system to enhance gameplay.",
             "Started a boss character using a state machine for complex behaviors.",
             "Programmed enemy slime movement and projectile tracking with predictive aiming.",
             "Implemented enemy pathing by lerping through nodes placed in the world.",
             "Designed attack mechanics and player health UI."
         ],
         whatILearned: [
-            "Combined art and mechanics to create a cohesive visual and gameplay experience.",
-            "Implemented advanced enemy AI with predictive aiming and pathfinding.",
-            "Designed and balanced player abilities like wall jumping and dashing."
+            "Combining art and mechanics to create a cohesive visual and gameplay experience.",
+            "Implementing advanced enemy AI with predictive aiming and pathfinding.",
+            "Designing and balancing player abilities like wall jumping and dashing."
         ]
     },
-    "Magecraft-Timber-Troupe": {
-        img1: "Unity/LundumDare55-2.PNG",
-        img2: "Unity/LundumDare-1.PNG",
+    "magecraft-timber-troupe": {
+        img1: "../images/Unity/LundumDare55-2.PNG",
+        img2: "../images/Unity/LundumDare55-3.PNG",
         contributions: [
             "Collaborated with a team to brainstorm and execute game ideas under time pressure.",
-            "Developed a shop system where the player could interact with a shop keeper to buy weapons.",
-            "Created sprite animations using krita and sketchbook.",
+            "Developed a shop system where players can interact with a bunny to buy weapons.",
+            "Created animations for the bunny character.",
             "Implemented spell button scripts for casting abilities."
         ],
         whatILearned: [
-            "Managed time and resources effectively during a game jam.",
-            "Worked in a team to brainstorm and implement ideas.",
-            "Created and animated character interactions in Unity."
+            "Managing time and resources effectively during a game jam.",
+            "Working in a team to brainstorm and implement ideas rapidly.",
+            "Creating and animating character interactions in Unity."
         ]
     },
-    "The-Gift": {
-        img1: "Unity/TheGift.PNG",
-        img2: "",
+    "the-gift": {
+        img1: "../images/Unity/",
+        img2: "../images/Unity/",
         contributions: [
             "Designed puzzles involving weighted pressure plates and object placement.",
-            "Created a fictional language that mapped to numbers for logic-based puzzles.",
-            "Implemented various mini-games that contributed to solving the puzzles."
+            "Created a fictional language that maps to numbers for logic-based puzzles.",
+            "Implemented various mini-games that contribute to solving the puzzles."
         ],
         whatILearned: [
-            "Designed intricate puzzles that challenged players' logic and problem-solving skills.",
-            "Created immersive gameplay through the use of fictional languages and symbols."
+            "Designing intricate puzzles that challenge players' logic and problem-solving skills.",
+            "Creating immersive gameplay through the use of fictional languages and symbols."
         ]
     },
-    "Better-Mechanics": {
-        img1: "Unity/BetterPlayerMechanics.PNG",
-        img2: "Unity/BetterPlayerMechanics-2.PNG",
+    "better-mechanics": {
+        img1: "../images/Unity/BetterPlayerMechanics.PNG",
+        img2: "../images/Unity/BetterPlayerMechanics-2.PNG",
         contributions: [
             "Developed math-based camera and player movement for precise control.",
             "Implemented crouching and ladder movement mechanics.",
@@ -236,12 +177,12 @@ const gameData = {
             "Created a custom crosshair UI for player feedback."
         ],
         whatILearned: [
-            "Implemented math-based mechanics for precise and responsive gameplay.",
-            "Designed intuitive player controls and interactions."
+            "Implementing math-based mechanics for precise and responsive gameplay.",
+            "Designing intuitive player controls and interactions."
         ]
     },
-    "Cardkyuu": {
-        img1: "Unity/Cardkyuu-GameJam.PNG",
+    "cardkyuu": {
+        img1: "../images/Unity/Cardkyuu-GameJam.PNG",
         img2: "",
         contributions: [
             "Developed a state machine for setting, serving, receiving, and spiking actions.",
@@ -249,45 +190,45 @@ const gameData = {
             "Collaborated with a team to set up a source tree and manage tasks via Trello."
         ],
         whatILearned: [
-            "Designed sports game mechanics with realistic physics.",
-            "Worked effectively in a team to distribute tasks and meet deadlines."
+            "Designing sports game mechanics with realistic physics.",
+            "Working effectively in a team to distribute tasks and meet deadlines."
         ]
     },
-    "Shadow-Ville": {
-        img1: "Unity/Shadow-Ville-1.PNG",
-        img2: "Unity/Shadow-Ville-2.PNG",
+    "shadow-vile": {
+        img1: "../images/Unity/",
+        img2: "../images/Unity/",
         contributions: [
-            "Created a floating island with visually appealing assets during a game jam.",
-            "Developed environmental design and asset integration."
+            "Started creating a floating island with visually appealing assets during a game jam.",
+            "Focused on developing environmental design and asset integration."
         ],
         whatILearned: [
-            "Explored environmental design techniques in Unity.",
-            "Balanced time and resources when working alone on a project."
+            "Exploring environmental design techniques in Unity.",
+            "Balancing time and resources when working alone on a project."
         ]
     },
-    "Cube-Brain": {
-        img1: "Unity/CubeBrain.PNG",
-        img2: "",
+    "cube-brain": {
+        img1: "../images/Unity/",
+        img2: "../images/Unity/",
         contributions: [
-            "Developed 2D tiles that generated other tiles procedurally.",
-            "Created a cube that the player could rotate in the 3 different axes.",
-            "Programmed a camera system that slowly zoomed in at the start of the game."
+            "Developed 2D tiles that generate other tiles procedurally.",
+            "Created a cube that the player can rotate in three different directions.",
+            "Programmed a camera system that slowly zooms in at the start of the game."
         ],
         whatILearned: [
-            "Introduced procedural generation in game development.",
-            "Created dynamic camera systems for enhancing gameplay."
+            "Introducing procedural generation in game development.",
+            "Creating dynamic camera systems for enhancing gameplay."
         ]
     },
-    "3d-Controller": {
-        img1: "Unity/3D-Controller-1.PNG",
-        img2: "Unity/3D-Controller-2.PNG",
+    "3d-controller": {
+        img1: "../images/Unity/",
+        img2: "../images/Unity/",
         contributions: [
-            "Created the foundation for level design.",
+            "Invested significant time in level design.",
             "Implemented mechanics like multiple jumps and player movement."
         ],
         whatILearned: [
-            "Gained foundational experience in Unity game development.",
-            "Explored level design and player movement mechanics."
+            "Gaining foundational experience in Unity game development.",
+            "Exploring level design and player movement mechanics."
         ]
     }
 };
