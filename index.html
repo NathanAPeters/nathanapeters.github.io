@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Nathan Peters</title>
+		<title>Nathan Peters - Home</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
+						<a href="index.html" class="logo"><strong>Nathan Peters</strong> <span>Portfolio</span></a>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -33,12 +33,12 @@
 						<li><a href="Unreal.html">Unreal</a></li>
 						<li><a href="Art.html">Art</a></li>
 						<li><a href="School.html">School</a></li>
-						<li><a href="Experience.html">Experience</a></li>
+						<li><a href="Resume.html">Resume</a></li>
 						<li><a href="AboutMe.html">Soft Skills</a></li>
 					</ul>
-					<ul class="actions stacked">
+					<!-- <ul class="actions stacked">
 						<li><a href="GettingStarted.html" class="button primary fit">Get Started</a></li>
-					</ul>
+					</ul> -->
 				</nav>
 
 				<!-- Banner -->
@@ -58,8 +58,112 @@
 					</div> -->
 				<!-- Main -->
 					<div id="main">
+
+
 <section id="startup" class="spotlights">
         <div class="inner">
+
+			<header class="major">
+				<h2>Procedural Tools</h2>
+				<p>Experimental tools and procedural systems developed in Unity.</p>
+			</header>
+
+					<section>
+						<div class="content">
+							<div class="inner">
+								<header class="major">
+									<h3>Mesh Drawing & Generation</h3>
+								</header>
+							</div>
+						</div>
+
+						<!-- <div class="image" style="background: #000;">
+							<video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;">
+								<source src="videos/MeshDrawing.mp4" type="video/mp4">
+							</video>
+						</div> -->
+
+						<div class="content">
+							<div class="inner">
+								<ul class="actions">
+									<li><button class="button toggle-breakdown">Technical Breakdown</button></li>
+								</ul>
+								<div class="breakdown-content" style="display: none; padding-top: 1.5em;">
+									<p><strong>What problem was I trying to solve?</strong><br>
+									I wanted to explore a different way of interacting with puzzles by allowing players to draw directly into the game world. Instead of placing predefined objects, I wanted player input to become real geometry that could be connected to gameplay mechanics through a flexible node system.</p>
+
+									<p><strong>How did I solve it?</strong><br>
+									I built a drawing system that captures brush strokes with a GPU compute shader and stores them in a RenderTexture. Once the player finishes drawing, the texture is converted into a physical 3D mesh using the Marching Squares algorithm. I then expanded the system with a node-based workflow, allowing generated meshes to become interactive puzzle elements that can be connected together to create different gameplay behaviors.</p>
+
+									<p><strong>What makes this solution interesting?</strong></p>
+
+									<ul>
+
+										<li>Uses a compute shader for smooth, real-time drawing directly onto a GPU RenderTexture.</li>
+
+										<li>Converts player drawings into 3D geometry using the Marching Squares algorithm with interpolated edge generation for smoother outlines.</li>
+
+										<li>Automatically extrudes generated polygons into watertight meshes complete with front faces, back faces, side walls, and MeshCollider generation.</li>
+
+										<li>Supports adjustable mesh depth, resolution, scaling, and winding direction, allowing the same system to create a variety of gameplay objects.</li>
+
+										<li>Introduced a node-based system that allows generated meshes to be connected to puzzle logic, making the drawing tool a foundation for interactive gameplay instead of simple geometry creation.</li>
+
+										<li>Separates drawing, mesh generation, rendering, and gameplay into reusable systems that can be extended independently.</li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="content">
+							<div class="inner">
+								<header class="major">
+									<h3>Procedural Mesh Lofting</h3>
+								</header>
+							</div>
+						</div>
+
+						<!-- <div class="image" style="background: #000;">
+							<video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;">
+								<source src="videos/PolyLoft.mp4" type="video/mp4">
+							</video>
+						</div> -->
+
+						<div class="content">
+							<div class="inner">
+								<ul class="actions">
+									<li><button class="button toggle-breakdown">Technical Breakdown</button></li>
+								</ul>
+								<div class="breakdown-content" style="display: none; padding-top: 1.5em;">
+								<p><strong>What problem was I trying to solve?</strong><br>
+								I wanted a faster way to create stylized 3D meshes directly inside Unity without switching to external modeling software. The tool needed to support a wide range of shapes—from dice and rocks to custom puzzle pieces—while remaining easy to experiment with.</p>
+
+								<p><strong>How did I solve it?</strong><br>
+								I built a procedural lofting tool that generates meshes by connecting customizable polygon layers. Each layer can independently control its number of sides, radius, height, and twist, allowing complex shapes to be created interactively. A custom Unity editor provides a real-time visualizer so meshes can be designed and adjusted without leaving the Inspector.</p>
+
+								<p><strong>What makes this solution interesting?</strong></p>
+
+								<ul>
+
+									<li>Generates 3D meshes procedurally by lofting between stacked polygon layers with configurable shape, size, and height.</li>
+
+									<li>Separates <strong>visual twist</strong> from <strong>logic twist</strong>, allowing the mesh appearance and triangulation to be controlled independently. This made it possible to generate shapes such as a D20 while keeping clean topology.</li>
+
+									<li>Supports connecting layers with different numbers of vertices, allowing a wide variety of procedural shapes to be created from the same generation algorithm.</li>
+
+									<li>Includes a custom Unity editor with live mesh updates, layer tabs, Undo support, and an interactive visualizer featuring pan, zoom, and connection previews.</li>
+
+									<li>Designed as a reusable content creation tool that can generate rocks, dice, crystals, puzzle pieces, and other stylized geometry entirely within Unity.</li>
+
+									<li>Built as a foundation that can be expanded with additional layer types and procedural generation techniques.</li>
+
+								</ul>
+
+							</div>
+						</div>
+					</section>
             <header class="major">
                 <h2>Modular Homes Engine</h2>
                 <p>A custom building engine and tools suite developed over 700+ hours.</p>
@@ -72,104 +176,290 @@
                     </video>
                 </div>
             </section>
+
 			<section>
 				<div class="content">
-                    <div class="inner">
-                        <header class="major">
-                            <h3>Foliage Shell Shader</h3>
-                        </header>
-                    </div>
-                </div>
-                <div class="image" style="background: #000;">
-                    <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                        <source src="videos/Tree.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </section>
-            <section>
-				<div class="content">
-                    <div class="inner">
-                        <header class="major">
-                            <h3>Procedural Vine Network System</h3>
-                        </header>
-                    </div>
-                </div>
-                <div class="image" style="background: #000;">
-                    <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                        <source src="videos/Vines.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="content">
-                    <div class="inner">
+					<div class="inner">
+						<header class="major">
+							<h3>Shell Texturing Moss Shader</h3>
+						</header>
+					</div>
+				</div>
 
-                        <p><strong>The Challenge:</strong> Manual placement of foliage on modular structures was tedious and broke the visual flow of the assets.</p>
-                        <p><strong>The Solution:</strong> A procedural vine network system generated directly within the engine that adapts to surface placement.</p>
-                        <h4>Key Technical Highlights:</h4>
-                        <ul>
-                            <li>Engineered customizable parameters for node width, length, and distance spread.</li>
-                            <li>Integrated dynamic leaf geometry generation mapped to procedural splines.</li>
-                            <li>Optimized growth directional math for natural environmental integration.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            
+				<div class="image" style="background: #000;">
+					<video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;">
+						<source src="videos/Tree.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<div class="content">
+					<div class="inner">
+						<ul class="actions">
+							<li><button class="button toggle-breakdown">Technical Breakdown</button></li>
+						</ul>
+						<div class="breakdown-content" style="display: none; padding-top: 1.5em;">
+							<p><strong>What problem was I trying to solve?</strong><br>
+							I wanted to add thick, stylized moss to rocks, trees, and other environment assets without modeling thousands of individual blades. The effect needed to be lightweight, reusable, and capable of naturally climbing surfaces.</p>
+
+							<p><strong>How did I solve it?</strong><br>
+							I built a shell texturing system using GPU instancing and a custom URP shader. Multiple mesh layers are rendered on top of one another while the shader offsets each shell, applies procedural masking, and animates the moss with wind. Growth is controlled by surface height, allowing moss to naturally spread across objects while remaining fully adjustable in the Unity Inspector.</p>
+
+							<p><strong>What makes this solution interesting?</strong></p>
+
+							<ul>
+
+								<li>Uses shell texturing to create the appearance of thick moss without modeling individual geometry.</li>
+
+								<li>Renders multiple moss layers using GPU instancing, allowing the entire effect to be drawn efficiently.</li>
+
+								<li>Applies procedural masking and height-based growth so moss naturally climbs surfaces instead of covering the entire mesh.</li>
+
+								<li>Includes animated wind movement to give the moss subtle motion and bring static environment assets to life.</li>
+
+								<li>Exposes artist-friendly controls for shell count, growth height, density, wind, and color directly in the Unity Inspector.</li>
+
+								<li>Reused the same shader on multiple assets, including trees, demonstrating a flexible material that adapts to different environment meshes.</li>
+
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="content">
+					<div class="inner">
+						<header class="major">
+							<h3>Procedural Vine System</h3>
+						</header>
+					</div>
+				</div>
+
+				<div class="image" style="background: #000;">
+					<video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;">
+						<source src="videos/Vines.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<div class="content">
+					<div class="inner">
+						<ul class="actions">
+							<li><button class="button toggle-breakdown">Technical Breakdown</button></li>
+						</ul>
+						<div class="breakdown-content" style="display: none; padding-top: 1.5em;">
+							<p><strong>What problem was I trying to solve?</strong><br>
+							I wanted a way to quickly add natural-looking vines to buildings without placing them by hand. The system needed to work on different surfaces while producing unique results each time it was generated.</p>
+
+							<p><strong>How did I solve it?</strong><br>
+							I created a procedural generation system that scans nearby geometry using configurable raycasts, builds a network of surface nodes, and connects them with Bézier curves. Those curves are converted into procedural vine meshes, then populated with randomly placed leaves to create organic-looking vegetation.</p>
+
+							<p><strong>What makes this solution interesting?</strong></p>
+
+							<ul>
+								<li>Built a configurable surface scanner that projects raycasts onto nearby geometry to generate vine attachment points.</li>
+
+								<li>Supports multiple projection directions, allowing vines to grow across walls, ceilings, and other surfaces without changing the generation logic.</li>
+
+								<li>Uses cubic Bézier curves with randomized control points to create natural branch shapes while maintaining smooth growth.</li>
+
+								<li>Procedurally generates vine meshes with adjustable thickness, radial detail, UV mapping, and tapered branch tips.</li>
+
+								<li>Places leaves at randomized positions and orientations along each branch to create varied, organic results.</li>
+
+								<li>Exposes generation settings such as branching density, leaf count, vine thickness, and scan resolution, making the system easy to iterate on inside the Unity Editor.</li>
+
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section>
+				<div class="content">
+					<div class="inner">
+						<header class="major">
+							<h3>Runtime Room Expansion System</h3>
+						</header>
+					</div>
+				</div>
+
+				<div class="image" style="background: #000;">
+					<video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;">
+						<source src="videos/Expansion.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<div class="content">
+					<div class="inner">
+							<ul class="actions">
+								<li><button class="button toggle-breakdown">Technical Breakdown</button></li>
+							</ul>
+							<div class="breakdown-content" style="display: none; padding-top: 1.5em;">
+							<p><strong>What problem was I trying to solve?</strong><br>
+							I wanted players to freely expand and reshape the interior of their home without breaking the existing layout. Expanding a room meant keeping walls, furniture placement, and gameplay data synchronized while the grid changed size in real time.</p>
+
+							<p><strong>How did I solve it?</strong><br>
+							I built a runtime expansion system that reconstructs the room layout from a stored reference matrix whenever its size changes. The system recalculates the grid, shifts existing objects when necessary, rebuilds placement cells, and keeps every connected system synchronized after each expansion.</p>
+
+							<p><strong>What makes this solution interesting?</strong></p>
+
+							<ul>
+								<li>Built a dedicated <code>StretchManager</code> that handles room expansion independently from rendering and gameplay systems.</li>
+
+								<li>Uses a preserved copy of the original room layout to rebuild expanded rooms consistently instead of modifying the existing grid repeatedly.</li>
+
+								<li>Automatically shifts placed furniture, updates occupancy data, and rebuilds snap cells whenever the room changes size.</li>
+
+								<li>Supports expanding rooms in all four directions while preserving valid object placements whenever possible.</li>
+
+								<li>Uses events to notify dependent systems when the room layout changes, keeping placement, rendering, and gameplay synchronized.</li>
+
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="content">
+					<div class="inner">
+						<header class="major">
+							<h3>Procedural Wood Shader</h3>
+						</header>
+					</div>
+				</div>
+
+				<div class="image" style="background: #000;">
+					<video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;">
+						<source src="videos/Wood.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<div class="content">
+					<div class="inner">
+						<ul class="actions">
+							<li><button class="button toggle-breakdown">Technical Breakdown</button></li>
+						</ul>
+						<div class="breakdown-content" style="display: none; padding-top: 1.5em;">
+							<p><strong>What problem was I trying to solve?</strong><br>
+							I wanted to create a stylized wood material without relying on texture files. The shader needed to generate unique-looking wooden planks while remaining lightweight, customizable, and easy to reuse across different modular building pieces.</p>
+
+							<p><strong>How did I solve it?</strong><br>
+							I wrote a procedural shader for Unity's Universal Render Pipeline that generates plank layouts and wood grain entirely through mathematical functions. Noise, fractal Brownian motion (FBM), and randomized plank variation are combined to produce natural-looking wood while exposing artist-friendly controls directly in the Inspector.</p>
+
+							<p><strong>What makes this solution interesting?</strong></p>
+
+							<ul>
+
+								<li>Generates wood grain procedurally without using texture maps, reducing the need for authored assets.</li>
+
+								<li>Creates randomized plank layouts with configurable widths, lengths, and subtle variation to avoid visible repetition.</li>
+
+								<li>Combines procedural noise, FBM, and sine-based grain patterns to produce flowing wood grain with adjustable contrast and sharpness.</li>
+
+								<li>Applies unique color variation to individual planks, giving large wooden surfaces a more natural appearance.</li>
+
+								<li>Includes adjustable controls for grain frequency, warp, plank variation, and color, allowing the material to be tuned directly in the Unity Inspector.</li>
+
+								<li>Designed for Unity's Universal Render Pipeline using HLSL, making the shader lightweight and easy to integrate into the modular building system.</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+<section>
+    <div class="content">
+        <div class="inner">
+            <header class="major">
+                <h3>Parent-Chain Save & Load Architecture</h3>
+            </header>
+        </div>
+    </div>
+
+    <div class="image" style="background: #000;">
+        <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <source src="videos/Saveload.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="content">
+        <div class="inner">
+			<ul class="actions">
+				<li><button class="button toggle-breakdown">Technical Breakdown</button></li>
+			</ul>
+			<div class="breakdown-content" style="display: none; padding-top: 1.5em;">
+				<p><strong>What problem was I trying to solve?</strong><br>
+				I needed a reliable way to save and load complex, interconnected modular homes. The biggest challenge was the order of operations: if a dependent object (like an attached module or piece of furniture) tried to load before its parent room even existed, the references would break and ruin the entire layout.</p>
+
+				<p><strong>How did I solve it?</strong><br>
+				I built a queue-based loading system that respects parent-child dependencies. It scans the save data, identifies the main "root" structures, and builds those first. If a child module tries to load but its parent isn't in the scene yet, the system simply pushes it to the back of the line until the parent is ready.</p>
+
+				<p><strong>What makes this solution interesting?</strong></p>
+				<ul>
+					<li>Uses a smart queue to delay loading dependent modules, preventing broken references without stalling the game.</li>
+					<li>Packages the entire scene's data—including custom wall slots and furniture—into a compact JSON format encoded in Base64, automatically copying it to the player's clipboard for easy sharing.</li>
+					<li>Safeguards against missing or renamed assets using string matching and regex, ensuring old save files don't completely crash if a prefab's name changes slightly.</li>
+					<li>Handles physical transformations carefully, strictly separating root world coordinates from local child placements so modules don't warp or inherit weird scaling.</li>
+					<li>Includes a fallback placement system for interior decorations, snapping them to the nearest valid room if their original grid coordinates fail validation.</li>
+				</ul>
+			</div>
+        </div>
+    </div>
+</section>
+
             <section>
 				<div class="content">
-                    <div class="inner">
-                        <header class="major">
-                            <h3>Runtime Expansion Algorithm</h3>
-                        </header>
-                    </div>
-                </div>
-                <div class="image" style="background: #000;">
-                    <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                        <source src="videos/Expansion.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </section>
-            <section>
+					<div class="inner">
+						<header class="major">
+							<h3>Modular Wall Customization</h3>
+						</header>
+					</div>
+				</div>
+
+				<div class="image" style="background: #000;">
+					<video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;">
+						<source src="videos/Restrictions.mp4" type="video/mp4">
+					</video>
+				</div>
+
 				<div class="content">
-                    <div class="inner">
-                        <header class="major">
-                            <h3>Procedural FBM Spruce Wood Shader</h3>
-                        </header>
-                    </div>
-                </div>
-                <div class="image" style="background: #000;">
-                    <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                        <source src="videos/Wood.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </section>
-            <section>
-				<div class="content">
-                    <div class="inner">
-                        <header class="major">
-                            <h3>Parent-Chain Save & Load Architecture</h3>
-                        </header>
-                    </div>
-                </div>
-                <div class="image" style="background: #000;">
-                    <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                        <source src="videos/Saveload.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </section>
-            <section>
-				<div class="content">
-                    <div class="inner">
-                        <header class="major">
-                            <h3>UI Placement Validation Restrictions</h3>
-                        </header>
-                    </div>
-                </div>
-                <div class="image" style="background: #000;">
-                    <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                        <source src="videos/Restrictions.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </section>
+					<div class="inner">
+						<ul class="actions">
+							<li><button class="button toggle-breakdown">Technical Breakdown</button></li>
+						</ul>
+						<div class="breakdown-content" style="display: none; padding-top: 1.5em;">
+							<p><strong>What problem was I trying to solve?</strong><br>
+							I wanted players to freely customize walls, windows, and other modular pieces while preventing combinations that would conflict with nearby objects or building rules. The system needed to enforce those restrictions automatically without requiring custom logic for every object.</p>
+
+							<p><strong>How did I solve it?</strong><br>
+							I built an interactive customization system where each module contains editable slots that open a popup menu when selected. Placement rules are configured directly in the Unity Inspector, allowing furniture and building pieces to dynamically enable or restrict available wall options as the player builds.</p>
+
+							<p><strong>What makes this solution interesting?</strong></p>
+
+							<ul>
+
+								<li>Created reusable placeholder slots that allow walls, windows, and other module pieces to be swapped without modifying the surrounding structure.</li>
+
+								<li>Built a popup interface that automatically generates its available options and visually greys out restricted selections instead of removing them.</li>
+
+								<li>Designed a rule-based restriction system where placed objects can lock specific customization options on the current module or neighboring modules.</li>
+
+								<li>Uses reference counting so multiple objects can safely apply restrictions without accidentally removing each other's rules.</li>
+
+								<li>Automatically replaces invalid wall selections whenever building rules change, ensuring every module always remains in a valid state.</li>
+
+								<li>Allows new restriction behaviors to be configured through the Inspector, making the system easy to expand without writing additional code.</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
         </div>
     </section>
 
@@ -202,7 +492,7 @@
 									<img src="art/InfectedBlueLake.png" alt="" />
 								</span>
 								<header class="major">
-									<h3><a href="Art.html" class="link">Creative endevours</a></h3>
+									<h3><a href="Art.html" class="link">Creative endeavours</a></h3>
 									<p>Art and Design</p>
 								</header>
 							</article>
@@ -244,7 +534,7 @@
 					<div class="inner">
 						<section>
 							<span class="image">
-								<img src="msc/Nathan.PNG" alt="Nathan Image" class="contact-image" />
+								<img src="Nathan.PNG" alt="Nathan Image" class="contact-image" />
 							</span>
 						</section>
 						<section class="split">
@@ -266,8 +556,7 @@
 								<div class="contact-method">
 									<span class="icon solid alt fa-home"></span>
 									<h3>Location</h3>
-									<span>Calgary, AB<br />
-									Victoria, BC</span>
+									<span>Calgary, AB</span>
 								</div>
 							</section>
 						</section>
@@ -292,6 +581,27 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+
+        <!-- Add this custom script right here! -->
+        <script>
+            $(document).ready(function() {
+                $('.toggle-breakdown').click(function(e) {
+                    e.preventDefault();
+                    
+                    // This creates the super smooth slide animation!
+                    $(this).closest('.inner').find('.breakdown-content').slideToggle(350);
+                    
+                    // This flips the button text so users know how to close it :3
+                    if ($(this).text() === 'Technical Breakdown') {
+                        $(this).text('Close Breakdown');
+                    } else {
+                        $(this).text('Technical Breakdown');
+                    }
+                });
+            });
+        </script>
+	</body>
+</html>
 
 	</body>
 </html>
