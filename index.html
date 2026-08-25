@@ -71,6 +71,23 @@
         border-left: 4px solid #9bf1ff;
         margin-bottom: 2em;
     }
+    header.major, header.major h2 {
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    }
+    @media screen and (max-width: 980px) {
+        .portfolio-card-wrapper { 
+            width: 100%; 
+        }
+        .portfolio-grid {
+            margin: 0; /* Removes the negative margin on mobile */
+        }
+    }
+    html, body {
+    overflow-x: hidden;
+    }
 </style>
 
 	</head>
